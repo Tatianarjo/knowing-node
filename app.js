@@ -1,12 +1,10 @@
 // Modules
 // CommonJS, every file is a module (by default)
-const peaches = 'peaches'
-// const peter = 'peter'
 
-const sayHi = (name) => {
-    console.log(`Hello there ${name}`)
-}
+const names = require('./4-names')
+const sayHi = require('./5-utils')
 
+// console.log(names)
 sayHi('susan')
-sayHi(peaches)
-sayHi('john')
+sayHi(names.peaches)
+sayHi(names.peter)
